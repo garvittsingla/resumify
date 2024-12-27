@@ -6,9 +6,7 @@ const Login = () => {
   const { user, handleLogin, handleLogout } = useAuth();
   const navigate = useNavigate();
 
-  if (user){
-    navigate('/dashboard')
-  }
+ 
 
 return (
 <div className="min-h-screen bg-black flex flex-col items-center justify-center px-4">
