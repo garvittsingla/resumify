@@ -1,34 +1,38 @@
-import { app } from "./firebaseconfig";
-import { getDatabase, set, ref } from "firebase/database";
-import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
+import { getAuth } from "firebase/auth";
+import {app} from "./firebaseconfig"  
+import { getFirestore,doc, setDoc,getDoc } from "firebase/firestore";
+const db = getFirestore(app)
 
-const db = getDatabase(app);
-const storage = getStorage(app);
 
-async function Savedata(formdata, userID) {
-  // Handle image upload for profile image
-  if (formdata.detailfrom0.image) {
-    const imageFile = formdata.detailfrom0.image;
-    const storageReference = storageRef(storage, `images/${userID}/${imageFile.name}`);
-    await uploadBytes(storageReference, imageFile);
-    const downloadURL = await getDownloadURL(storageReference);
-    formdata.detailfrom0.imageURL = downloadURL;
-    delete formdata.detailfrom0.image; // Remove the file object from formdata
-  }
 
-  // Handle image upload for project images
-  for (let i = 1; i <= 3; i++) {
-    const projectImage = formdata.detailfrom2[`project${i}`]?.image;
-    if (projectImage) {
-      const storageReference = storageRef(storage, `images/${userID}/${projectImage.name}`);
-      await uploadBytes(storageReference, projectImage);
-      const downloadURL = await getDownloadURL(storageReference);
-      formdata.detailfrom2[`project${i}`].imageURL = downloadURL;
-      delete formdata.detailfrom2[`project${i}`].image; // Remove the file object from formdata
-    }
-  }
 
-  await set(ref(db, `users/${userID}`), formdata);
+const addtodatabase = async(user,formdata) =>{
+  let userid = (user.uid).toString()
+  console.log(userid)
+   try{
+    await setDoc(doc(db, `users/${userid}`),formdata)
+    console.log("done")
+   }catch(err){
+    console.log(err)
+   }
+   
 }
+const getfromdatabase = async (user) => {
 
-export { db, Savedata };
+  if (user){
+    try {
+      let userid = user.uid.toString();
+      const docRef = doc(db, `users/${userid}`);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        const storeddata= (docSnap.data())
+        return storeddata
+      } else {
+        console.log("No such document!");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  }
+export {addtodatabase,getfromdatabase}
