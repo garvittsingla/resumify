@@ -1,7 +1,14 @@
 import React , {useState,useEffect} from "react"
-import { useAuth } from "../isloggedin";
-import { getfromdatabase } from "../firebasedb";
+// import { useAuth } from "../isloggedin";
+// import { getfromdatabase } from "../firebasedb";
 import { tailspin } from 'ldrs'
+import { useParams } from "react-router-dom";
+import {app} from "../firebaseconfig"  
+
+import { getFirestore,doc, setDoc,getDoc } from "firebase/firestore";
+import { div } from "framer-motion/client";
+const db = getFirestore(app)
+
 
 
 
@@ -9,25 +16,44 @@ import { tailspin } from 'ldrs'
 
 
 function Portfolio() {
+  const {portfolioid} =useParams()
+  console.log(portfolioid)
+
+  const getPortfolioData = async (portfolioid) => {
+    try {
+      const docRef = doc(db, `users/${portfolioid}`);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        const storeddata = docSnap.data();
+        return storeddata;
+      } else {
+        console.log("No such document!");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+
    tailspin.register()
-   const { user } = useAuth();
-   console.log(user)
+  //  const { user } = useAuth();
+  //  console.log(user)
    const [fetched,setfetched] = useState(null)
    const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (user) {
-      getfromdatabase(user)
+      getPortfolioData(portfolioid)
         .then((data) => {
           setfetched(data);
+          console.log(data)
          //  setLoading(false);
         })
         .catch((error) => {
           console.error("Error fetching data:", error);
          //  setLoading(false);
         });
-    } 
-  }, [user]);
+    
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -45,9 +71,9 @@ function Portfolio() {
   }
 
   return (
-      <div className="bg-black">
+      fetched?<div className="bg-black">
          {loading ? (loader()):
-        user&&(
+        (
     <div lang="en" className="bg-[#0C0C0C] text-[#E9E9E9] overflow-y-hidden sm:overflow-x-hidden ">  
       <div id="page1" className="h-screen w-full font-mono  ">
          <nav
@@ -422,7 +448,7 @@ function Portfolio() {
     </div>
 </div>
 
-    )}</div>)
+    )}</div>:<div>Invalid URL</div>)
 }
 
 export default Portfolio;

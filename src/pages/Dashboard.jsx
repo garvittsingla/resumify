@@ -23,7 +23,10 @@
       await addtodatabase(user, formdata);
       const data = await getfromdatabase(user);
       console.log(data);
-      navigate("/portfolio");
+      alert("Information stored")
+      const userId = user.uid 
+      console.log(userId)
+      navigate(`/portfolio/${userId}`);
     }
 
     const increaseindex = (e) => {
@@ -54,7 +57,7 @@
 
     return (
       user ? (
-        <div className='w-full h-screen bg-zinc-900'>
+        <div className='w-full h-screen bg-black'>
           <>
             <nav className='w-full h-16 flex items-center justify-between px-4 md:px-10'>
               <div className="left text-yellow-500 font-bold text-xl md:text-2xl h-full w-1/2 md:w-1/6 flex items-center justify-center">Resumify</div>
@@ -96,7 +99,7 @@
             <div className={`h-[5px] w-[80px] mt-6 ${currentindex == 3 || currentindex > 3 ? "bg-white" : "bg-slate-600"}`}></div>
             <div onClick={() => { setcurrentindex(3) }} className={`h-[50px] w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 3 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>4</div>
           </div>
-          <div className='w-11/12 md:w-[95%] mx-auto bg-zinc-900 mt-10 rounded-lg flex flex-col'>
+          <div className='w-11/12 md:w-[95%] mx-auto  mt-10 rounded-lg flex flex-col'>
             <h1 className='mx-auto text-white text-4xl md:text-6xl mt-3 font-sans'>User Details</h1>
             <div className=''>
               <div className='mt-6 mx-auto w-[90%] md:w-[80%] '>
