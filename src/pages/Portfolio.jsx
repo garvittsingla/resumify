@@ -288,7 +288,7 @@ function Portfolio() {
             <div className="w-full md:w-1/2 flex items-center justify-center h-full">
               <div id="vid1" className="w-[95%] h-full rounded-lg items-center flex relative justify-center">
                 <div className="bg-transparent h-full w-full absolute z-[10]"></div>
-                <img className="rounded-lg shadow-[0px_0px_11px_10px_rgba(34,18,40,0.6)] w-full" src="photo3.png"/>
+                <img className="rounded-lg shadow-[0px_0px_11px_10px_rgba(34,18,40,0.6)] w-full" src="../../public/photo3.png" alt="" />
             </div>
           </div>
         </div>
@@ -312,7 +312,7 @@ function Portfolio() {
             <div className="w-full md:w-1/2 flex items-center justify-center h-full">
               <div id="vid2" className="w-[95%] h-full rounded-lg items-center flex relative justify-center">
                 <div className="bg-transparent h-full w-full absolute z-[10]"></div>
-                <img className="rounded-lg shadow-[0px_0px_11px_10px_rgba(34,18,40,0.6)] w-full" src="photo2.jpg"/>
+                <img className="rounded-lg shadow-[0px_0px_11px_10px_rgba(34,18,40,0.6)] w-full" src="../../public/photo2.jpg"/>
               </div>
             </div>
           </div>
@@ -337,7 +337,7 @@ function Portfolio() {
             <div className="w-full md:w-1/2 flex items-center justify-center h-full">
               <div id="vid3" className="w-[95%] h-full rounded-lg items-center flex relative justify-center">
                 <div className="bg-transparent h-full w-full absolute z-[10]"></div>
-                <img className="rounded-lg shadow-[0px_0px_11px_10px_rgba(34,18,40,0.6)] w-full" src="photo1.jpg"/>
+                <img className="rounded-lg shadow-[0px_0px_11px_10px_rgba(34,18,40,0.6)] w-full" src="../../public/photo1.jpg"/>
               </div>
             </div>
           </div>
@@ -350,7 +350,7 @@ function Portfolio() {
         </h1>
         <div id="profilesec" className="h-[70%] w-full mt-10 flex flex-col md:flex-row gap-10 items-center justify-center">
          <div className="w-[93%] md:w-1/5 h-full bg-[#FB8500] py-3 shadow-[0px_0px_30px_9px_rgba(234,88,12,0.4)] hover:shadow-[0px_0px_40px_12px_rgba(234,88,12,0.6)] transition-shadow duration-300 ease-in-out rounded-lg">
-            <img className="w-[95%] mx-auto rounded-lg mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105" src="github.png" alt="" />
+            <img className="w-[95%] mx-auto rounded-lg mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105" src="../../public/github.png" alt="" />
             <div className="h-[1px] bg-gray-100 mt-4"></div>
             <div className="italic mx-auto text-center text-[#023047] mt-4 font-semibold text-lg">Github</div>
             <div className="bg-[#FFB703] w-5/6 mx-auto mt-6 p-4 rounded-lg">
@@ -367,7 +367,7 @@ function Portfolio() {
             </div>
         </div>
         <div className="w-[93%] md:w-1/5 h-full bg-[#FB8500] py-3 shadow-[0px_0px_30px_9px_rgba(234,88,12,0.4)] hover:shadow-[0px_0px_40px_12px_rgba(234,88,12,0.6)] transition-shadow duration-300 ease-in-out rounded-lg">
-         <img className="w-[95%] mx-auto rounded-lg mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105" src="x.png" alt=""/>
+         <img className="w-[95%] mx-auto rounded-lg mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105" src="../../public/x.png" alt=""/>
          <div className="h-[1px] bg-gray-100 mt-4"></div>
          <div className="italic mx-auto text-center text-[#023047] mt-4 font-semibold text-lg">X</div>
          <div className="bg-[#FFB703] w-5/6 mx-auto mt-6 p-4 rounded-lg">
@@ -384,7 +384,7 @@ function Portfolio() {
          </div>
      </div>
      <div className="w-[93%] md:w-1/5 h-full bg-[#FB8500] py-3 shadow-[0px_0px_30px_9px_rgba(234,88,12,0.4)] hover:shadow-[0px_0px_40px_12px_rgba(234,88,12,0.6)] transition-shadow duration-300 ease-in-out rounded-lg">
-      <img className="w-[65%] mx-auto rounded-lg mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105" src="linkedin.jpg" alt="" />
+      <img className="w-[65%] mx-auto rounded-lg mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105" src="../../public/linkedin.jpg" alt="" />
       <div className="h-[1px] bg-gray-100 mt-4"></div>
       <div className="italic mx-auto text-center text-[#023047] mt-4 font-semibold text-lg">Linkedin</div>
       <div className="bg-[#FFB703] w-5/6 mx-auto mt-6 p-4 rounded-lg">
@@ -412,7 +412,7 @@ function Portfolio() {
           <div id="dts" className="w-full h-auto flex items-center justify-center py-10 cursor-pointer">
             <div className="bg-[#FB8500] shadow-[0px_0px_30px_9px_rgba(234,88,12,0.9)] p-8 rounded-lg  w-[90%] max-w-[800px] flex items-center gap-8 transform transition duration-300 ease-in-out hover:scale-105 hover:bg-[#FF6700] hover:shadow-[0px_0px_40px_12px_rgba(255,104,12,0.5)]">
               <div className="w-[80px] h-[80px]">
-                <img src="building.png" className="w-full h-full object-contain rounded-md" />
+                <img src="../../public/building.png" className="w-full h-full object-contain rounded-md" />
               </div>
               <div className="flex-1 text-white">
                 <h2 className="text-3xl font-semibold font-mono">{fetched && fetched.form4&&fetched.form4.organization}</h2>
@@ -428,7 +428,7 @@ function Portfolio() {
              <div className="w-full h-auto flex items-center justify-center py-10">
                <div className="bg-[#FB8500] shadow-[0px_0px_30px_9px_rgba(234,88,12,0.9)] p-8 rounded-lg  w-[90%] max-w-[800px] flex items-center gap-8 group transition-all duration-500 ease-in-out hover:bg-[#FF6700]">
                  <div className="w-[80px] h-[80px]">
-                   <img src="mail.webp" alt="Email Icon" className="w-full h-full object-contain rounded-md" />
+                   <img src="../../public/mail.webp" alt="Email Icon" className="w-full h-full object-contain rounded-md" />
                  </div>
                  <div className="flex-1 text-white">
                    <h2 className="text-3xl font-semibold font-['Ubuntu']">Get in Touch</h2>
