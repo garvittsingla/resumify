@@ -377,7 +377,7 @@ function Portfolio() {
                  <h1>Follow me on X</h1>
              </div>
              <div>
-                 <a target="_blank" href={`${fetched && fetched.form1&&fetched.form2.x}`}>
+                 <a target="_blank" href={`${fetched && fetched.form1&&fetched.form1.x}`}>
                      <button className="mx-auto ml-[34%] mt-10 px-4 py-2 bg-[#023047] text-white rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-[#03517a]">
                          Follow me
                      </button>
@@ -394,7 +394,7 @@ function Portfolio() {
               <h1>Connect with me on linkedIn</h1>
           </div>
           <div>
-              <a target="_blank" href={`${fetched && fetched.form1&&fetched.form2.linkedin}`}>
+              <a target="_blank" href={`${fetched && fetched.form1&&fetched.form1.linkedin}`}>
                   <button className="mx-auto ml-[34%] mt-10 px-4 py-2 bg-[#023047] text-white rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-[#03517a]">
                       Connect
                   </button>
