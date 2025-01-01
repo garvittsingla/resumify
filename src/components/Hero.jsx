@@ -16,7 +16,7 @@ const Hero = () => {
             </p>
             <button onClick={()=>{
                 navigate("/login")
-            }} className='text-xl text-black px-4 rounded-md py-2 mt-5 bg-[#E3D9E7]'>Get Started</button>
+            }} className='text-xl flex items-center text-black px-4 rounded-md py-2 mt-5 bg-[#E3D9E7]'>   Get Started <span className='text-sm text-slate-600 ml-1'>-It's free</span></button>
         </div>
     )
 }

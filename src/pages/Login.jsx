@@ -9,7 +9,7 @@ const Login = () => {
  
 
 return (
-<div className="min-h-screen bg-black flex flex-col items-center justify-center px-4">
+<div className="min-h-screen overflow-x-hidden absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex flex-col items-center justify-center px-4">
       <div className="w-full max-w-md space-y-8">
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-300 to-orange-300 bg-clip-text text-transparent">

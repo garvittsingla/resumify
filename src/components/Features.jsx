@@ -1,5 +1,6 @@
 export default function Features(){
     return(
+        
         <div className="w-3/4 mx-auto h-96  flex flex-col md:flex-row items-center justify-between px-4">
             <div className="w-1/4 p-9 items-center  flex flex-col h-full">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="size-14">

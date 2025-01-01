@@ -26,9 +26,7 @@ export default function Landing() {
         <Hero />
       </motion.div>
       <motion.div className="w-full h-[1px] mt-5 bg-slate-600" variants={variants}></motion.div>
-      {/* <motion.div variants={variants}> */}
         <Marquee />
-      {/* </motion.div> */}
       <motion.div className="w-full h-[1px] mt-1 bg-slate-600" variants={variants}></motion.div>
       <Features/>
     </motion.div>
