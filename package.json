@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
+    "@studio-freight/lenis": "^1.0.42",
     "firebase": "^11.1.0",
     "framer-motion": "^11.15.0",
     "ldrs": "^1.0.2",
+    "lenis": "^1.1.18",
     "lucide-react": "^0.469.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
