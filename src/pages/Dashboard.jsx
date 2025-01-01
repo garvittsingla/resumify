@@ -50,14 +50,10 @@
       <Detailfrom3 setformdata={setformdata} submit={submit} formdata={formdata} />
     ];
 
-    const isFormFilled = () => {
-      const currentForm = forms[currentindex].props.formdata;
-      return Object.values(currentForm).every(value => value !== "");
-    };
 
     return (
       user ? (
-        <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+        <div class="absolute min-h-screen py-4 top-0 z-[-2]  w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
           <div className=''>
             <nav className='w-full h-16 flex items-center justify-between px-4 md:px-10'>
               <div className="left text-white font-bold text-xl md:text-2xl h-full w-1/2 md:w-1/6 flex font-['Bauhaus_93'] items-center justify-center">Resumify</div>
@@ -90,7 +86,7 @@
               </div>
             </nav>
           </div>
-          <div className='w-11/12 md:w-1/2 mx-auto flex justify-center'>
+          <div className='w-11/12 md:w-1/2 mt-4 md:mt-0 mx-auto flex justify-center'>
           
             <div onClick={() => { setcurrentindex(0) }} className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 0 || currentindex > 0 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>1</div>
             <div className={`h-[5px] w-[80px] mt-6 ${currentindex == 1 || currentindex > 1 ? "bg-white" : "bg-slate-600"}`}></div>
@@ -112,8 +108,8 @@
             ) : (
               <button 
                 onClick={() => (setcurrentindex((prev) => prev + 1))} 
-                className={`bg-white text-black px-2 py-3 w-24 h-18 flex items-center gap-5 rounded-lg font-semibold mx-auto ${!isFormFilled() ? 'opacity-50 cursor-not-allowed' : ''}`} 
-                disabled={!isFormFilled()}
+                className={`bg-white text-black px-2 py-3 w-24 h-18 flex items-center gap-5 rounded-lg font-semibold mx-auto `} 
+                
               >
                 Next<FaArrowRight />
               </button>
@@ -121,7 +117,7 @@
           </div>
         </div>
       ) : (
-        navigate('/login')
+        navigate('/')
       )
     );
   };

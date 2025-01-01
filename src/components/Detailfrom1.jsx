@@ -30,7 +30,7 @@ const Detailfrom1 = ({ formData, setformdata, submit }) => {
   }, [setformdata, skill1, skill2, skill3, skill4, skill5, skill6, github, linkedin, x]);
 
   return (
-    <div className='flex flex-col p-4'>
+    <div className='flex overflow-x-hidden flex-col p-4'>
       <form className='flex flex-col items-center justify-evenly gap-4'>
         <h1 className='text-white text-lg'>Enter the languages you know</h1>
         <div className='flex flex-wrap gap-4 w-full'>

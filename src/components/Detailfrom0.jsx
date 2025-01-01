@@ -1,60 +1,61 @@
 import React, { useEffect, useState } from 'react';
 
 const Detailfrom0 = ({ setformdata }) => {
-  const [fullname, setfullname] = useState("");
-  const [profession, setprofession] = useState("");
-  const [bio, setbio] = useState("");
-  const [form1, setform1] = useState([]);
+  const [fullname, setFullname] = useState('');
+  const [profession, setProfession] = useState('');
+  const [bio, setBio] = useState('');
 
   useEffect(() => {
-    const updatedForm1 = {
-      fullname,
-      profession,
-      bio
-    };
-
-    setform1(updatedForm1);
     setformdata((prev) => ({
       ...prev,
-      form1: updatedForm1
+      form1: { fullname, profession, bio },
     }));
   }, [fullname, profession, bio, setformdata]);
 
   return (
-    <div className='flex flex-col p-4'>
-      <form className='flex flex-col items-center justify-evenly gap-4'>
-        <div className='flex flex-col gap-1'>
-          <label className='text-white font-semibold' htmlFor="Firstname">First Name</label>
+    <div className="flex flex-col p-4">
+      <form className="flex flex-col items-center justify-evenly gap-4">
+        <div className="flex flex-col gap-1">
+          <label className="text-white font-semibold" htmlFor="fullname">
+            Full Name
+          </label>
           <input
+            id="fullname"
             value={fullname}
-            onChange={(e) => setfullname(e.target.value)}
-            className='text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2'
+            onChange={(e) => setFullname(e.target.value)}
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
             type="text"
             name="name"
-            placeholder='Full name'
+            placeholder="John Doe"
           />
         </div>
-        <div className='flex flex-col gap-1'>
-          <label className='text-white font-semibold' htmlFor="Profession">Profession</label>
+        <div className="flex flex-col gap-1">
+          <label className="text-white font-semibold" htmlFor="profession">
+            Profession
+          </label>
           <input
+            id="profession"
             value={profession}
-            onChange={(e) => setprofession(e.target.value)}
-            className='text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2'
+            onChange={(e) => setProfession(e.target.value)}
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
             type="text"
             name="profession"
-            placeholder='Enter your Profession'
+            placeholder="Machine learning "
           />
         </div>
-        <div className='flex flex-col gap-1'>
-          <label className='text-white font-semibold' htmlFor="Bio">Bio</label>
+        <div className="flex flex-col gap-1">
+          <label className="text-white font-semibold" htmlFor="bio">
+            Bio
+          </label>
           <input
+            id="bio"
             value={bio}
-            onChange={(e) => setbio(e.target.value)}
-            className='text-white rounded-md text-lg  bg-gray-900 focus:outline-none w-[1000px] p-2'
+            onChange={(e) => setBio(e.target.value)}
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none max-w-screen-xl p-2"
             type="text"
             name="bio"
             maxLength={100}
-            placeholder='Write a short crisp bio of yours (less than 30 words)'
+            placeholder="Hey i am John a machine learning engineer"
           />
         </div>
       </form>
