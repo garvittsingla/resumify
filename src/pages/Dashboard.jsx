@@ -57,10 +57,10 @@
 
     return (
       user ? (
-        <div className='w-full h- bg-black'>
+        <div class="absolute inset-0 -z-10 h-full w-full items-center px-3 py-6 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
           <div className=''>
             <nav className='w-full h-16 flex items-center justify-between px-4 md:px-10'>
-              <div className="left text-yellow-500 font-bold text-xl md:text-2xl h-full w-1/2 md:w-1/6 flex items-center justify-center">Resumify</div>
+              <div className="left text-white font-bold text-xl md:text-2xl h-full w-1/2 md:w-1/6 flex font-['Bauhaus_93'] items-center justify-center">Resumify</div>
               <div className="right h-[80%] w-32 md:w-40 p-2 flex gap-3 items-center text-white bg-zinc-800 rounded-xl cursor-pointer select-none" onClick={visible}>
                 <div className="name">
                   {user && (
@@ -91,6 +91,7 @@
             </nav>
           </div>
           <div className='w-11/12 md:w-1/2 mx-auto flex justify-center'>
+          
             <div onClick={() => { setcurrentindex(0) }} className={`h-[50px] w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 0 || currentindex > 0 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>1</div>
             <div className={`h-[5px] w-[80px] mt-6 ${currentindex == 1 || currentindex > 1 ? "bg-white" : "bg-slate-600"}`}></div>
             <div onClick={() => { setcurrentindex(1) }} className={`h-[50px] w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 1 || currentindex > 1 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>2</div>
@@ -99,7 +100,7 @@
             <div className={`h-[5px] w-[80px] mt-6 ${currentindex == 3 || currentindex > 3 ? "bg-white" : "bg-slate-600"}`}></div>
             <div onClick={() => { setcurrentindex(3) }} className={`h-[50px] w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 3 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>4</div>
           </div>
-          <div className='w-11/12 md:w-[95%] mx-auto bg-black h-screen  mt-10 rounded-lg flex flex-col'>
+          <div className='w-11/12 md:w-[95%] mx-auto mt-10 rounded-lg flex flex-col'>
             <h1 className='mx-auto text-white text-4xl md:text-6xl mt-3 font-sans'>User Details</h1>
             <div className=''>
               <div className='mt-6 mx-auto w-[90%] md:w-[80%] '>
@@ -111,7 +112,7 @@
             ) : (
               <button 
                 onClick={() => (setcurrentindex((prev) => prev + 1))} 
-                className={`bg-yellow-500 text-white px-2 py-3 w-24 h-18 flex items-center gap-5 rounded-lg font-semibold mx-auto ${!isFormFilled() ? 'opacity-50 cursor-not-allowed' : ''}`} 
+                className={`bg-white text-black px-2 py-3 w-24 h-18 flex items-center gap-5 rounded-lg font-semibold mx-auto ${!isFormFilled() ? 'opacity-50 cursor-not-allowed' : ''}`} 
                 disabled={!isFormFilled()}
               >
                 Next<FaArrowRight />

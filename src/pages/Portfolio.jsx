@@ -75,7 +75,9 @@ function Portfolio() {
          {loading ? (loader()):
         (
     <div lang="en" className="bg-[#0C0C0C] text-[#E9E9E9] overflow-y-hidden sm:overflow-x-hidden ">  
+    
       <div id="page1" className="h-screen w-full font-mono  ">
+        
          <nav
             className="text-lg w-5/6 mx-auto flex justify-between font-sans items-center h-24 overflow-y-hidden"
             >
@@ -358,7 +360,7 @@ function Portfolio() {
                     <h1>Explore my github projects and repository</h1>
                 </div>
                 <div>
-                    <a target="_blank" href={`${fetched && fetched.form1 &&fetched.form2.github}`}>
+                    <a target="_blank" href={`${fetched && fetched.form2 &&fetched.form2.github}`}>
                         <button className="mx-auto ml-[34%] mt-10 px-4 py-2 bg-[#023047] text-white rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-[#03517a]">
                             Click me
                         </button>
