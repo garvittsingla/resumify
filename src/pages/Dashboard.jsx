@@ -29,15 +29,8 @@
       navigate(`/portfolio/${userId}`);
     }
 
-    const increaseindex = (e) => {
-      e.preventDefault();
-      setcurrentindex((prev) => (prev + 1));
-    };
 
-    const decreseindex = (e) => {
-      e.preventDefault();
-      setcurrentindex((prev) => (prev - 1));
-    };
+
 
     const visible = () => {
       setisvisible((prev) => (!prev));
@@ -53,7 +46,7 @@
 
     return (
       user ? (
-        <div class="absolute min-h-screen py-4 top-0 z-[-2]  w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+        <div className="absolute min-h-screen py-4 top-0 z-[-2]  w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
           <div className=''>
             <nav className='w-full h-16 flex items-center justify-between px-4 md:px-10'>
               <div className="left text-white font-bold text-xl md:text-2xl h-full w-1/2 md:w-1/6 flex font-['Bauhaus_93'] items-center justify-center">Resumify</div>
@@ -98,8 +91,8 @@
           </div>
           <div className='w-11/12 md:w-[95%] mx-auto mt-10 rounded-lg flex flex-col'>
             <h1 className='mx-auto text-white text-4xl md:text-6xl mt-3  font-["Bauhaus_93"]'>User <span className='font-sans'> Details</span></h1>
-            <div className=''>
-              <div className='mt-6 mx-auto w-[90%] md:w-[80%] '>
+            <div className='overflow-x-hidden '>
+              <div className='mt-6 overflow-x-hidden mx-auto w-[90%] md:w-[80%] '>
                 {forms[currentindex]}
               </div>
             </div>

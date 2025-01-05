@@ -39,7 +39,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project1name}
             onChange={(e) => setProject1Name(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project1.name"
             placeholder='Enter project name'
@@ -47,7 +47,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project1bio}
             onChange={(e) => setProject1Bio(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project1.bio"
             placeholder='Enter a short bio'
@@ -55,7 +55,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project1link}
             onChange={(e) => setProject1link(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project1.link"
             placeholder='Enter github link'
@@ -65,7 +65,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project2name}
             onChange={(e) => setProject2Name(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project2.name"
             placeholder='Enter project name'
@@ -73,7 +73,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project2bio}
             onChange={(e) => setProject2Bio(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project2.bio"
             placeholder='Enter a short bio'
@@ -81,7 +81,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project2link}
             onChange={(e) => setProject2link(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project2.link"
             placeholder='Enter github link'
@@ -91,7 +91,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project3name}
             onChange={(e) => setProject3Name(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project3.name"
             placeholder='Enter project name'
@@ -99,7 +99,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project3bio}
             onChange={(e) => setProject3Bio(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project3.bio"
             placeholder='Enter a short bio'
@@ -107,7 +107,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
           <input
             value={project3link}
             onChange={(e) => setProject3link(e.target.value)}
-            className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none flex-1 p-2'
+            className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project3.link"
             placeholder='Enter github link'

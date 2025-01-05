@@ -28,7 +28,8 @@ const Detailfrom3 = ({ setformdata, submit }) => {
         <input
           value={organization}
           onChange={(e) => setorganization(e.target.value)}
-          className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none w-full p-2'
+          className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
+
           type="text"
           name="organization"
           placeholder='Enter organization name'
@@ -36,7 +37,8 @@ const Detailfrom3 = ({ setformdata, submit }) => {
         <input
           value={jobrole}
           onChange={(e) => setjobrole(e.target.value)}
-          className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none w-full p-2'
+          className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
+
           type="text"
           name="jobRole"
           placeholder='Enter your job role'
@@ -44,7 +46,8 @@ const Detailfrom3 = ({ setformdata, submit }) => {
         <input
           value={startyear}
           onChange={(e) => setstartyear(e.target.value)}
-          className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none w-full p-2'
+          className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
+
           type="text"
           name="startYear"
           placeholder='Enter starting year'
@@ -52,7 +55,8 @@ const Detailfrom3 = ({ setformdata, submit }) => {
         <input
           value={email}
           onChange={(e) => setemail(e.target.value)}
-          className='text-white border-white border-b-[0.1px] text-lg bg-zinc-800 focus:outline-none w-full p-2'
+          className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
+
           type="email"
           name="email"
           placeholder='Email address'
