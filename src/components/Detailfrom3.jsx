@@ -32,7 +32,7 @@ const Detailfrom3 = ({ setformdata, submit }) => {
 
           type="text"
           name="organization"
-          placeholder='Enter organization name'
+          placeholder='Amazon'
         />
         <input
           value={jobrole}

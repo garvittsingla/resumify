@@ -42,7 +42,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project1.name"
-            placeholder='Enter project name'
+            placeholder='Resumify'
           />
           <input
             value={project1bio}
@@ -50,7 +50,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project1.bio"
-            placeholder='Enter a short bio'
+            placeholder='Make hostable portfolio in minutes'
           />
           <input
             value={project1link}
@@ -58,7 +58,7 @@ const Detailfrom2 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full md:w-1/3 p-2"
             type="text"
             name="project1.link"
-            placeholder='Enter github link'
+            placeholder='https://github.com/garvittsingla/resumify'
           />
         </div>
         <div className='flex flex-col md:flex-row gap-4 w-full'>

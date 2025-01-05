@@ -40,7 +40,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
             type="text"
             name="skill1"
-            placeholder='Enter your first skill'
+            placeholder='DSA'
           />
           <input
             value={skill2}
@@ -48,7 +48,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
             type="text"
             name="skill2"
-            placeholder='Enter your second skill'
+            placeholder='HTML'
           />
           <input
             value={skill3}
@@ -56,7 +56,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
             type="text"
             name="skill3"
-            placeholder='Enter your third skill'
+            placeholder='React'
           />
         </div>
         <div className='flex flex-wrap gap-4 w-full'>
@@ -66,7 +66,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
             type="text"
             name="skill4"
-            placeholder='Enter your fourth skill'
+            placeholder='Express'
           />
           <input
             value={skill5}
@@ -74,7 +74,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
             type="text"
             name="skill5"
-            placeholder='Enter your fifth skill'
+            placeholder='Postman'
           />
           <input
             value={skill6}
@@ -82,7 +82,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
             className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
             type="text"
             name="skill6"
-            placeholder='Enter your sixth skill'
+            placeholder='Node Js'
           />
         </div>
         <h1 className='text-white text-lg'>Enter your Profiles</h1>
@@ -92,7 +92,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
           className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
           type="text"
           name="github"
-          placeholder='Your Github URL'
+          placeholder='https://github.com/garvittsingla'
         />
         <input
           value={linkedin}
@@ -100,7 +100,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
           className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
           type="text"
           name="linkedin"
-          placeholder='Your Linkedin URL'
+          placeholder='https://www.linkedin.com/in/garvit-singla-217372321/'
         />
         <input
           value={x}
@@ -108,7 +108,7 @@ const Detailfrom1 = ({ setformdata, submit }) => {
           className="text-white rounded-md text-lg bg-gray-900 focus:outline-none w-full p-2"
           type="text"
           name="twitter"
-          placeholder='Your Twitter URL'
+          placeholder='https://x.com/garvits093'
         />
       </form>
     </div>

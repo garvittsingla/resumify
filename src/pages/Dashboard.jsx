@@ -81,13 +81,13 @@
           </div>
           <div className='w-11/12 md:w-1/2 mt-4 md:mt-0 mx-auto flex justify-center'>
           
-            <div onClick={() => { setcurrentindex(0) }} className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 0 || currentindex > 0 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>1</div>
+            <div  className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 0 || currentindex > 0 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>1</div>
             <div className={`h-[5px] w-[80px] mt-6 ${currentindex == 1 || currentindex > 1 ? "bg-white" : "bg-slate-600"}`}></div>
-            <div onClick={() => { setcurrentindex(1) }} className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 1 || currentindex > 1 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>2</div>
+            <div  className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 1 || currentindex > 1 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>2</div>
             <div className={`h-[5px] w-[80px] mt-6 ${currentindex == 2 || currentindex > 2 ? "bg-white" : "bg-slate-600"}`}></div>
-            <div onClick={() => { setcurrentindex(2) }} className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 2 || currentindex > 2 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>3</div>
+            <div  className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 2 || currentindex > 2 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>3</div>
             <div className={`h-[5px] w-[80px] mt-6 ${currentindex == 3 || currentindex > 3 ? "bg-white" : "bg-slate-600"}`}></div>
-            <div onClick={() => { setcurrentindex(3) }} className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 3 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>4</div>
+            <div  className={`h-[50px] w-[70px] md:w-[50px] rounded-full text-center flex justify-center items-center cursor-pointer ${currentindex === 3 ? 'bg-white text-black' : 'bg-gray-500 text-white'}`}>4</div>
           </div>
           <div className='w-11/12 md:w-[95%] mx-auto mt-10 rounded-lg flex flex-col'>
             <h1 className='mx-auto text-white text-4xl md:text-6xl mt-3  font-["Bauhaus_93"]'>User <span className='font-sans'> Details</span></h1>
